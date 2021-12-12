@@ -8,6 +8,11 @@ $("#enviar").click(function () {
       $("#foto").attr("src", helioSoprazuar.url);
       $("#titulo").text(helioSoprazuar.title);
       $("#texto").text(helioSoprazuar.explanation);
+      $("#foto").css("borde-radius", "10px");
+      $("#texto").css("color", "red");
+      $("#texto").css("border", "3px solid red");
+      $("#texto").css("border-radius", "10px");
+      $("#foto").css("height", "300px");
     },
   });
 });
