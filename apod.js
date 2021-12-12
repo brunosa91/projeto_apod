@@ -9,10 +9,13 @@ $("#enviar").click(function () {
       $("#titulo").text(helioSoprazuar.title);
       $("#texto").text(helioSoprazuar.explanation);
       $("#foto").css("borde-radius", "10px");
-      $("#texto").css("color", "red");
-      $("#texto").css("border", "3px solid red");
+      $("#texto").css("color", "#BFBFBF");
+      $("#texto").css("border", "3px solid #BFBFBF");
       $("#texto").css("border-radius", "10px");
-      $("#foto").css("height", "300px");
+      $("#foto").css("height", "500px");
+      $("#foto").css("width", "500px");
+      $("#foto").css("display", "flex");
+      $("#foto").css("justify-content", "center");
     },
   });
 });
