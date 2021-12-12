@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #3e4031;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.corpo {
+  display: flex;
+}
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
