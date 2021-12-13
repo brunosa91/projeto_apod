@@ -5,18 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
+    <header class="cabecalho">
+      <h1>A.P.O.D.</h1>
+      <h2>Astronomic Picture Of the Day</h2>
+      <ul>
+        <li>SOBRE</li>
+        <li>IMAGEM DO DIA</li>
+      </ul>
+    </header>
     <main class="corpo">
       <div class="botoes">
-        <button type="button" id="enviar">teste</button>
         <input id="date" type="date" />
-      </div>
-      <div class="informacoes">
-        <img src="" id="foto" />
+        <button type="button" id="enviar">teste</button>
+        <p class="texto_entrada">
+          Bem-vindo ao portal API da NASA. O objetivo deste site é tornar os
+          dados da NASA, incluindo imagens, eminentemente acessíveis aos
+          desenvolvedores de aplicativos. Este catálogo se concentra em APIs
+          amplamente úteis e amigáveis ​​ao usuário e não contém todas as APIs
+          da NASA.
+        </p>
         <h1 id="titulo"></h1>
         <p id="texto"></p>
+      </div>
+      <div class="informacoes">
+        <img src="imagem/planetario.jpg" id="foto_entrada" />
+        <img src="" id="foto" />
       </div>
     </main>
     <footer class="rodape"></footer>

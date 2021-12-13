@@ -8,14 +8,17 @@ $("#enviar").click(function () {
       $("#foto").attr("src", helioSoprazuar.url);
       $("#titulo").text(helioSoprazuar.title);
       $("#texto").text(helioSoprazuar.explanation);
-      $("#foto").css("borde-radius", "10px");
-      $("#texto").css("color", "#BFBFBF");
-      $("#texto").css("border", "3px solid #BFBFBF");
-      $("#texto").css("border-radius", "10px");
-      $("#foto").css("height", "500px");
-      $("#foto").css("width", "500px");
+
+      $("#foto_entrada").css("display", "none");
+      $(".texto_entrada").css("display", "none");
       $("#foto").css("display", "flex");
-      $("#foto").css("justify-content", "center");
+      // $("#texto").css("color", "#BFBFBF");
+      // $("#texto").css("border", "3px solid #BFBFBF");
+      // $("#texto").css("border-radius", "10px");
+      // $("#foto").css("height", "500px");
+      // $("#foto").css("width", "500px");
+      // $("#foto").css("display", "flex");
+      // $("#foto").css("justify-content", "center");
     },
   });
 });
