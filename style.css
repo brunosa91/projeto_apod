@@ -17,13 +17,24 @@ body {
   justify-content: space-evenly;
   align-items: center;
   height: 70px;
-  width: 100%;
+  /* width: 100%; */
   background-color: black;
   color: #aeb1c2;
+  font-family: "Girassol", cursive;
 }
+.apod:nth-child(0n + 1) {
+  color: red;
+}
+
 .cabecalho ul {
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  width: 30%;
+  align-items: center;
+}
+#audio {
+  width: 250px;
 }
 .corpo {
   display: flex;
@@ -31,21 +42,45 @@ body {
   height: calc(100%- (70px+50px));
   width: 100%;
 }
-.botoes {
+.caixa_botoes {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   width: 50%;
   margin-top: 40px;
 }
-.botoes input button {
-  width: 20%;
+#date {
+  width: 25%;
+  background-color: #aeb1c2;
+  color: #252c40;
+  text-align: center;
+  border-radius: 5px;
+}
+.caixa_enviar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+#enviar {
+  margin-top: 10px;
+  width: 80%;
+  height: 30px;
+  border-radius: 10px;
+  color: orange;
+  background-color: black;
+  box-shadow: red 10px 10px 10px;
+  font-family: "Girassol", cursive;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .texto_entrada {
   margin-top: 20px;
   font-size: 20px;
   color: #aeb1c2;
+  font-family: "Girassol", cursive;
 }
 #foto_entrada {
   width: 500px;
@@ -57,6 +92,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#titulo {
+  font-family: "Girassol", cursive;
+  color: #859ca6;
+  margin-top: 10px;
 }
 #texto {
   font-size: 20px;
@@ -70,6 +110,32 @@ body {
 }
 .rodape {
   height: 50px;
-  width: 100%;
+  /* width: 100%; */
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aeb1c2;
+}
+
+@media (max-width: 700px) {
+  .caixa_enviar {
+    width: 100%;
+    height: 100%;
+  }
+  #date {
+    width: 100%;
+    height: 100%;
+  }
+  .corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #audio {
+    display: none;
+  }
 }

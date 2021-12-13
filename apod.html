@@ -8,30 +8,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Girassol&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
   </head>
   <body>
     <header class="cabecalho">
-      <h1>A.P.O.D.</h1>
+      <h1 class="apod">A.P.O.D.</h1>
       <h2>Astronomic Picture Of the Day</h2>
       <ul>
-        <li>SOBRE</li>
+        <li>
+          <audio id="audio" preload="metadata" autoplay controls loop>
+            <source
+              src="Música/Young And Old Know Love - Puddle of Infinity.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+        </li>
         <li>IMAGEM DO DIA</li>
       </ul>
     </header>
     <main class="corpo">
-      <div class="botoes">
+      <div class="caixa_botoes">
         <input id="date" type="date" />
-        <button type="button" id="enviar">teste</button>
+        <div class="caixa_enviar">
+          <button type="button" id="enviar">GO VIAJERO</button>
+          <p>&#128640</p>
+        </div>
         <p class="texto_entrada">
-          Bem-vindo ao portal API da NASA. O objetivo deste site é tornar os
-          dados da NASA, incluindo imagens, eminentemente acessíveis aos
-          desenvolvedores de aplicativos. Este catálogo se concentra em APIs
-          amplamente úteis e amigáveis ​​ao usuário e não contém todas as APIs
-          da NASA.
+          Bem-vindo ao projeto de aplicação da API APOD, você deve perguntar-se
+          o que é isso? Certo vamos lá.<br />O Astronomy Picture of the Day
+          (APOD, em português: Imagem Astronômica do Dia) é um website mantido
+          pela NASA e pela Universidade Tecnológica de Michigan. De acordo com o
+          website, "cada dia uma imagem ou foto diferente do universo é
+          mostrada, com uma curta explicação escrita por um astrônomo
+          profissional".Basicamente utilizando a API da NASA foi desenvolvida
+          uma página que quando for inserida uma data a partir de 16 de junho de
+          1995 uma imagem diferente será mostrada com sua respectiva foto, sendo
+          assim divirta-se nessa viagem e explore o universo pelos olhos da
+          NASA. GO VIAJERO
         </p>
         <h1 id="titulo"></h1>
         <p id="texto"></p>
@@ -41,7 +57,7 @@
         <img src="" id="foto" />
       </div>
     </main>
-    <footer class="rodape"></footer>
+    <footer class="rodape">&copy Todos os direitos reservados.</footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="apod.js"></script>
   </body>
