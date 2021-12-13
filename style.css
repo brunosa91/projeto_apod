@@ -119,6 +119,14 @@ body {
 }
 
 @media (max-width: 700px) {
+  #foto_entrada {
+    width: 100%;
+    height: 100%;
+  }
+  #foto {
+    width: 100%;
+    height: 100%;
+  }
   .caixa_enviar {
     width: 100%;
     height: 100%;
