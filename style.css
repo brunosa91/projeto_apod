@@ -22,7 +22,7 @@ body {
   color: #aeb1c2;
   font-family: "Girassol", cursive;
 }
-.apod:nth-child(0n + 1) {
+.apod {
   color: red;
 }
 
@@ -35,6 +35,15 @@ body {
 }
 #audio {
   width: 250px;
+}
+#today {
+  text-decoration: none;
+  background-color: black;
+  color: #aeb1c2;
+  font-family: "Girassol", cursive;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
 }
 .corpo {
   display: flex;
@@ -74,6 +83,7 @@ body {
   font-family: "Girassol", cursive;
   font-weight: bold;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .texto_entrada {
