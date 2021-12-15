@@ -3,22 +3,31 @@ $("#enviar").click(function () {
   $.ajax({
     url: `https://api.nasa.gov/planetary/apod?api_key=Ac7EEBSoSA2Jp3YNjDjCDRUy2HmkO86O0rwhaq1o&date=${apod}`,
     type: "GET",
-    success: function (helioSoprazuar) {
-      console.log(helioSoprazuar);
-      $("#foto").attr("src", helioSoprazuar.url);
-      $("#titulo").text(helioSoprazuar.title);
-      $("#texto").text(helioSoprazuar.explanation);
+    success: function (apodData) {
+      console.log(apodData);
+      $("#foto").attr("src", apodData.url);
+      $("#titulo").text(apodData.title);
+      $("#texto").text(apodData.explanation);
 
       $("#foto_entrada").css("display", "none");
       $(".texto_entrada").css("display", "none");
       $("#foto").css("display", "flex");
-      // $("#texto").css("color", "#BFBFBF");
-      // $("#texto").css("border", "3px solid #BFBFBF");
-      // $("#texto").css("border-radius", "10px");
-      // $("#foto").css("height", "500px");
-      // $("#foto").css("width", "500px");
-      // $("#foto").css("display", "flex");
-      // $("#foto").css("justify-content", "center");
+    },
+  });
+});
+$("#today").click(function () {
+  $.ajax({
+    url: `https://api.nasa.gov/planetary/apod?api_key=Ac7EEBSoSA2Jp3YNjDjCDRUy2HmkO86O0rwhaq1o`,
+    type: "GET",
+    success: function (apodData) {
+      console.log(apodData);
+      $("#foto").attr("src", apodData.url);
+      $("#titulo").text(apodData.title);
+      $("#texto").text(apodData.explanation);
+
+      $("#foto_entrada").css("display", "none");
+      $(".texto_entrada").css("display", "none");
+      $("#foto").css("display", "flex");
     },
   });
 });
